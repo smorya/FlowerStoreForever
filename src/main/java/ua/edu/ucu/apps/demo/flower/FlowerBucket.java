@@ -8,13 +8,22 @@ public class FlowerBucket {
     private ArrayList<FlowerPack> flowerBucket = new ArrayList();
 
 
-    public void add(FlowerPack pack) {
+    public void addFlowers(FlowerPack pack) {
         flowerBucket.add(pack);
 
 
     }
+    public Boolean searchFlowers(Flower flowerToSearch) {
+        for (FlowerPack pack : getFlowerBucket()) {
+            if (pack.getFlower() == flowerToSearch) {
+                return true;
+            }
 
-    public double getPrice() {
+        }
+        return false;
+    }
+
+    public double price() {
         double price = 0.0d;
         for (FlowerPack pack
                 : getFlowerBucket()) {
