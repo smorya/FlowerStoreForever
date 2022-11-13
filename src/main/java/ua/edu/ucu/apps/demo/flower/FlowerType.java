@@ -2,6 +2,6 @@ package ua.edu.ucu.apps.demo.flower;
 
 
 public enum FlowerType {
-    CACTUSFLOWER, ROMASHKAFLOWER
+    CACTUSFLOWER, ROMASHKAFLOWER, ROSE
 }
 

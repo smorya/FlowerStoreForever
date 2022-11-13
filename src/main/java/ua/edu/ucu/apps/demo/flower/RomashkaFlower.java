@@ -1,7 +1,6 @@
 package ua.edu.ucu.apps.demo.flower;
 
-public class RomashkaFlower extends Item{
-    public double price(){
-        return 5;
-    }
+public class RomashkaFlower extends Flower{
+    private FlowerType flower = FlowerType.ROMASHKAFLOWER;
+//    private FlowerColor color = FlowerColor.BLUE;
 }
