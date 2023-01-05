@@ -20,10 +20,8 @@ public class DemoApplication {
 	@GetMapping
 	public static List<FlowerBucket> RunIt(){
 		FlowerBucket flowerBucket = new FlowerBucket();
-		CactusFlower cFlower = new CactusFlower();
-		RomashkaFlower rFlower = new RomashkaFlower();
-		cFlower.setColor("Green");
-		rFlower.setColor("White");
+		CactusFlower cFlower = new CactusFlower(3, "Green", 100);
+		RomashkaFlower rFlower = new RomashkaFlower(3, "Blue", 100);
 		FlowerPack pack1 = new FlowerPack(cFlower, 3);
 		FlowerPack pack2 = new FlowerPack(rFlower, 5);
 
