@@ -16,20 +16,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-//	@RequestMapping(path = "/flowers")
-	@GetMapping
-	public static List<FlowerBucket> RunIt(){
-		FlowerBucket flowerBucket = new FlowerBucket();
-		CactusFlower cFlower = new CactusFlower(3, "Green", 100);
-		RomashkaFlower rFlower = new RomashkaFlower(3, "Blue", 100);
-		FlowerPack pack1 = new FlowerPack(cFlower, 3);
-		FlowerPack pack2 = new FlowerPack(rFlower, 5);
-
-		flowerBucket.addFlowers(pack1);
-		flowerBucket.addFlowers(pack2);
-
-		return List.of(flowerBucket);
-	}
-
 
 }
+
+
