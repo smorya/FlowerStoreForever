@@ -3,8 +3,8 @@ package ua.edu.ucu.apps.demo.flower;
 public class CactusFlower extends Flower{
     private FlowerType flower = FlowerType.CACTUSFLOWER;
 
-    public CactusFlower(double sepalLength, String color, double price) {
-        super(sepalLength, color, price);
+    public CactusFlower(long id, double sepalLength, String color, double price) {
+        super(id, sepalLength, color, price);
     }
 
 

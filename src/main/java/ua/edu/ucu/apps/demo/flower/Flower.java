@@ -6,46 +6,29 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Setter
+@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table
 public class Flower {
+    @Id @Getter @GeneratedValue
+    private Long id;
     @Getter
     private double sepalLength;
+    @Getter
     private String color;
     @Getter
     private double price;
-    @Getter
-    private FlowerType flowerType;
-    @Id @Getter
-    private Long id;
 
-    public Flower(double sepalLength, String color, double price) {
-        this.price = price;
-        this.sepalLength = sepalLength;
-        this.color = color;
-
-    }
 
     public void setPrice(int number) {
         price = number;
     }
 
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    @Id
-    public Long getId() {
-        return id;
-    }
 }

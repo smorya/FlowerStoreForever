@@ -13,8 +13,8 @@ public class FlowerTests {
     @BeforeEach
     public void init(){
         FlowerBucket flowerBucket = new FlowerBucket();
-        cactus = new CactusFlower(3, "Green", 100);
-        romashka = new RomashkaFlower(3, "Blue", 100);
+        cactus = new CactusFlower(1, 3,"Green", 100);
+        romashka = new RomashkaFlower(2, 3,"Blue", 100);
         pack = new FlowerPack(cactus, 3);
 
     }

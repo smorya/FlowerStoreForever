@@ -10,7 +10,7 @@ import java.util.List;
 
 @SpringBootApplication
 @RestController
-@RequestMapping(path = "/api/v1/flowers")
+@RequestMapping(path = "/api/v1/flower")
 public class DemoApplication {
 
 	public static void main(String[] args) {
